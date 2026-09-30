@@ -1,0 +1,52 @@
+file-version: 2
+gui:
+  state:
+    enabled: "ENABLED"
+    disabled: "DISABLED"
+  hint:
+    toggle: "Click to toggle"
+    open: "Click to open"
+    language: "Click to switch"
+    reset: "Click to continue"
+    back: "Click to go back"
+    close: "Click to close"
+    confirm: "Click to confirm"
+    cancel: "Click to cancel"
+    info: ""
+  title:
+    main: "Settings"
+    chat: "Settings › Chat"
+    notifications: "Settings › Notifications"
+    sounds: "Settings › Sounds"
+    messages: "Settings › Messages"
+    admin: "Settings › %target%"
+    confirm: "Reset Settings"
+    confirm-admin: "Reset › %target%"
+  setting:
+    chat: { label: "Chat Messages", desc: "See messages from other players" }
+    plugin-messages: { label: "Plugin Messages", desc: "Confirmations for ULTRAS commands" }
+    messages: { label: "All Messages", desc: "Every ULTRAS message" }
+    sounds: { label: "All Sounds", desc: "Every ULTRAS sound" }
+    death: { label: "Death Messages", desc: "Receive death messages" }
+    death-sounds: { label: "Death Sounds", desc: "Hear death sounds" }
+    join-quit: { label: "Join / Quit Messages", desc: "Receive join and quit messages" }
+    join-quit-sounds: { label: "Join / Quit Sounds", desc: "Hear join and quit sounds" }
+    achievements: { label: "Achievement Messages", desc: "Receive achievement messages" }
+    achievement-sounds: { label: "Achievement Sounds", desc: "Hear achievement sounds" }
+    msg: { label: "Private Messages", desc: "Allow others to message you" }
+    msg-sounds: { label: "Private Message Sounds", desc: "Hear private message sounds" }
+    mentions: { label: "Mentions", desc: "Get notified when mentioned" }
+    mention-sounds: { label: "Mention Sounds", desc: "Hear mention sounds" }
+  item:
+    chat: { label: "Chat", desc: "Chat and plugin messages" }
+    notifications: { label: "Notifications", desc: "Mentions and private messages" }
+    sounds: { label: "Sounds", desc: "Control what you hear" }
+    messages: { label: "Messages", desc: "Death, join, quit, achievements" }
+    language: { label: "Language", desc: "Your personal language" }
+    reset: { label: "Reset Settings", desc: "Restore the defaults" }
+    back: { label: "Back", desc: "" }
+    close: { label: "Close", desc: "" }
+    confirm: { label: "Yes, reset", desc: "Restore all defaults" }
+    cancel: { label: "No, cancel", desc: "Keep current settings" }
+    confirm-info: { label: "Are you sure?", desc: "All settings return to default" }
+    editing: { label: "Editing settings", desc: "Player: %target%" }

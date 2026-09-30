@@ -1,0 +1,77 @@
+name: ULTRAS_Chat
+main: me.uc_hussein.ultraschat.ULTRASChatPlugin
+version: '${version}'
+api-version: '${apiVersion}'
+authors: [UC_Hussein]
+description: Calm, premium chat, death, join/quit, achievement, private message and mention system.
+
+commands:
+  chat:
+    description: ULTRAS Chat settings and tools
+    usage: "/chat [setting|toggle|language|reset|msg|reload]"
+    permission: ultraschat.use
+    permission-message: "You do not have permission to use this command."
+  msg:
+    description: Send a private message
+    usage: "/msg <player> <message>"
+    aliases: [tell, w, whisper]
+    permission: ultraschat.msg
+    permission-message: "You do not have permission to use this command."
+  reply:
+    description: Reply to your last private message
+    usage: "/reply <message>"
+    aliases: [r]
+    permission: ultraschat.msg
+    permission-message: "You do not have permission to use this command."
+
+permissions:
+  ultraschat.use:
+    description: Use /chat and its player settings
+    default: true
+  ultraschat.chat:
+    description: Change the chat visibility setting
+    default: true
+  ultraschat.ignore:
+    description: Use /chat ignore
+    default: true
+  ultraschat.ignore.exempt:
+    description: Cannot be ignored by other players
+    default: op
+  ultraschat.msg:
+    description: Send private messages
+    default: true
+  ultraschat.mention:
+    description: Trigger @mentions
+    default: true
+  ultraschat.settings:
+    description: Open the settings GUI
+    default: true
+  ultraschat.reload:
+    description: Reload the plugin configuration
+    default: op
+  ultraschat.admin.settings:
+    description: Open and edit other players' settings
+    default: op
+  ultraschat.bypass.antispam:
+    description: Bypass the chat anti-spam delay
+    default: op
+  ultraschat.msg.bypass:
+    description: Message players who disabled private messages
+    default: op
+  ultraschat.vanish.see:
+    description: Mention / message vanished players
+    default: op
+  ultraschat.mention.staff:
+    description: Trigger mentions when mentions.from-everyone is false
+    default: op
+  ultraschat.admin:
+    description: All ULTRAS Chat administration permissions
+    default: op
+    children:
+      ultraschat.reload: true
+      ultraschat.admin.settings: true
+      ultraschat.bypass.antispam: true
+      ultraschat.msg.bypass: true
+      ultraschat.vanish.see: true
+      ultraschat.mention.staff: true
+      ultraschat.ignore.exempt: true

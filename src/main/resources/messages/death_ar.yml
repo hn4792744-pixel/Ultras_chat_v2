@@ -1,0 +1,111 @@
+file-version: 2
+death:
+  player-kill:
+    - "<prefix> %killer% <death>أنهى رحلة %victim%"
+    - "<prefix> %killer% <death>تغلّب على %victim%"
+    - "<prefix> %victim% <death>سقط أمام %killer%"
+  zombie:
+    - "<prefix> %victim% <death>اجتاحه الموتى"
+    - "<prefix> %victim% <death>سقط أمام الزومبي"
+    - "<prefix> %victim% <death>التهمه زومبي"
+  skeleton:
+    - "<prefix> %victim% <death>أصابه سهم من العظام"
+    - "<prefix> %victim% <death>سقط أمام هيكل عظمي"
+    - "<prefix> %victim% <death>قتله رامٍ من الموتى"
+  creeper:
+    - "<prefix> %victim% <death>انفجر عليه كريبر"
+    - "<prefix> %victim% <death>سمع الفحيح متأخرًا"
+    - "<prefix> %victim% <death>غدر به كريبر"
+  spider:
+    - "<prefix> %victim% <death>وقع في شباك العنكبوت"
+    - "<prefix> %victim% <death>لدغه عنكبوت"
+    - "<prefix> %victim% <death>سقط أمام عنكبوت"
+  enderman:
+    - "<prefix> %victim% <death>واجه نظرة إندرمان"
+    - "<prefix> %victim% <death>أغضب إندرمان"
+    - "<prefix> %victim% <death>خطفه إندرمان"
+  witch:
+    - "<prefix> %victim% <death>سقط بسحر ساحرة"
+    - "<prefix> %victim% <death>لعنته ساحرة"
+    - "<prefix> %victim% <death>شرب الجرعة الخطأ"
+  drowned:
+    - "<prefix> %victim% <death>سحبه الغريق إلى الأعماق"
+    - "<prefix> %victim% <death>ابتلعته الأمواج"
+    - "<prefix> %victim% <death>انضم إلى الغرقى"
+  fall:
+    - "<prefix> %victim% <death>سقط حتى النهاية"
+    - "<prefix> %victim% <death>أخطأ الأرض"
+    - "<prefix> %victim% <death>سقط من علوٍ شاهق"
+  fire:
+    - "<prefix> %victim% <death>احترق"
+    - "<prefix> %victim% <death>التهمته النيران"
+    - "<prefix> %victim% <death>تحوّل إلى رماد"
+  lava:
+    - "<prefix> %victim% <death>انتهى في الحمم"
+    - "<prefix> %victim% <death>ذاب في الحمم"
+    - "<prefix> %victim% <death>سقط في بحر من الحمم"
+  drowning:
+    - "<prefix> %victim% <death>غرق"
+    - "<prefix> %victim% <death>ضاع تحت الأمواج"
+    - "<prefix> %victim% <death>نفد هواؤه"
+  suffocation:
+    - "<prefix> %victim% <death>اختنق"
+    - "<prefix> %victim% <death>دُفن داخل الصخر"
+    - "<prefix> %victim% <death>ضاق به المكان"
+  void:
+    - "<prefix> %victim% <death>ابتلعه الفراغ"
+    - "<prefix> %victim% <death>سقط في العدم"
+    - "<prefix> %victim% <death>ضاع في الهاوية"
+  explosion:
+    - "<prefix> %victim% <death>مزّقه انفجار"
+    - "<prefix> %victim% <death>تلاشى في انفجار"
+    - "<prefix> %victim% <death>رحل بانفجار"
+  projectile:
+    - "<prefix> %victim% <death>أصابته رمية من بعيد"
+    - "<prefix> %victim% <death>لم يرَ الضربة قادمة"
+    - "<prefix> %victim% <death>سقط برمية طائشة"
+  lightning:
+    - "<prefix> %victim% <death>ضربه البرق"
+    - "<prefix> %victim% <death>غضبت عليه العاصفة"
+    - "<prefix> %victim% <death>صعقته السماء"
+  poison:
+    - "<prefix> %victim% <death>مات مسمومًا"
+    - "<prefix> %victim% <death>استسلم للسم"
+    - "<prefix> %victim% <death>ذبل من السم"
+  wither:
+    - "<prefix> %victim% <death>ذبل حتى الفناء"
+    - "<prefix> %victim% <death>تلاشى بفعل الذبول"
+    - "<prefix> %victim% <death>تحوّل إلى رماد وعظام"
+  starvation:
+    - "<prefix> %victim% <death>مات جوعًا"
+    - "<prefix> %victim% <death>نفد طعامه"
+    - "<prefix> %victim% <death>أنهكه الجوع"
+  cactus:
+    - "<prefix> %victim% <death>أنهاه شوك الصبار"
+    - "<prefix> %victim% <death>عانق صبّارة"
+    - "<prefix> %victim% <death>سقط بين الأشواك"
+  sweet-berry-bush:
+    - "<prefix> %victim% <death>ضاع بين الأشواك"
+    - "<prefix> %victim% <death>وخزته الأشواك"
+    - "<prefix> %victim% <death>سقط في شجيرة التوت"
+  falling-block:
+    - "<prefix> %victim% <death>سحقته كتلة ساقطة"
+    - "<prefix> %victim% <death>سقط عليه ثقل"
+    - "<prefix> %victim% <death>طُمر تحت كتلة"
+  entity-attack:
+    - "<prefix> %victim% <death>سقط أمام %killer%"
+    - "<prefix> %killer% <death>أنهى رحلة %victim%"
+    - "<prefix> %victim% <death>قُتل على يد %killer%"
+  magic:
+    - "<prefix> %victim% <death>أنهاه سحر"
+    - "<prefix> %victim% <death>سقط بتعويذة"
+    - "<prefix> %victim% <death>خذله السحر"
+  freeze:
+    - "<prefix> %victim% <death>تجمّد"
+    - "<prefix> %victim% <death>ضاع في البرد"
+    - "<prefix> %victim% <death>تحوّل إلى جليد"
+  other:
+    - "<prefix> %victim% <death>انتهت رحلته"
+    - "<prefix> %victim% <death>رحل"
+    - "<prefix> %victim% <death>سقط"
+  location: "<prefix> <muted>مكان موتك</muted> <info>%location%</info> <muted>في %world%"

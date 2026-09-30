@@ -1,0 +1,71 @@
+file-version: 2
+# Main settings menu (27 slots). type: TOGGLE | OPEN | LANGUAGE | RESET | BACK | CLOSE | INFO | CONFIRM | CANCEL
+# Placeholders: %label% %desc% %hint% %state% %language% %target% %player%
+title: "<#c9c9c9>%title%"
+title-key: "gui.title.main"
+size: 27
+filler:
+  enabled: true
+  material: GRAY_STAINED_GLASS_PANE
+
+toggle-style:
+  enabled:
+    name: "<#7bd88f>%label%"
+    lore: ["<gray>%desc%", "", "<#7bd88f>● %state%", "<dark_gray>%hint%"]
+  disabled:
+    name: "<#ff6b6b>%label%"
+    lore: ["<gray>%desc%", "", "<#ff6b6b>● %state%", "<dark_gray>%hint%"]
+
+items:
+  chat:
+    slot: 10
+    material: PAPER
+    type: OPEN
+    page: chat
+    label: "gui.item.chat.label"
+    desc: "gui.item.chat.desc"
+    name: "<white>%label%"
+    lore: ["<gray>%desc%", "", "<dark_gray>%hint%"]
+  notifications:
+    slot: 12
+    material: BELL
+    type: OPEN
+    page: notifications
+    label: "gui.item.notifications.label"
+    desc: "gui.item.notifications.desc"
+    name: "<white>%label%"
+    lore: ["<gray>%desc%", "", "<dark_gray>%hint%"]
+  sounds:
+    slot: 14
+    material: NOTE_BLOCK
+    type: OPEN
+    page: sounds
+    label: "gui.item.sounds.label"
+    desc: "gui.item.sounds.desc"
+    name: "<white>%label%"
+    lore: ["<gray>%desc%", "", "<dark_gray>%hint%"]
+  messages:
+    slot: 16
+    material: BOOK
+    type: OPEN
+    page: messages
+    label: "gui.item.messages.label"
+    desc: "gui.item.messages.desc"
+    name: "<white>%label%"
+    lore: ["<gray>%desc%", "", "<dark_gray>%hint%"]
+  language:
+    slot: 20
+    material: COMPASS
+    type: LANGUAGE
+    label: "gui.item.language.label"
+    desc: "gui.item.language.desc"
+    name: "<white>%label%"
+    lore: ["<gray>%desc%", "", "<#ff5a5a>● %language%", "<dark_gray>%hint%"]
+  reset:
+    slot: 24
+    material: BARRIER
+    type: RESET
+    label: "gui.item.reset.label"
+    desc: "gui.item.reset.desc"
+    name: "<#ff6b6b>%label%"
+    lore: ["<gray>%desc%", "", "<dark_gray>%hint%"]

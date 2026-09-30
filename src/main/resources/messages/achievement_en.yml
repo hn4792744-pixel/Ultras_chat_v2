@@ -1,0 +1,5 @@
+file-version: 2
+achievement:
+  task: "<prefix> <star>•</star> %player% <muted>unlocked</muted> %achievement%"
+  goal: "<prefix> <star>•</star> %player% <muted>reached the goal</muted> %achievement%"
+  challenge: "<prefix> <star>•</star> %player% <muted>completed the challenge</muted> %achievement%"

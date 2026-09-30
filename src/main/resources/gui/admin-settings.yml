@@ -1,0 +1,56 @@
+file-version: 2
+# Admin view of another player's settings (36 slots). Requires ultraschat.admin.settings
+title: "<#ff5a5a>%title%"
+title-key: "gui.title.admin"
+size: 36
+filler:
+  enabled: true
+  material: BLACK_STAINED_GLASS_PANE
+
+toggle-style:
+  enabled:
+    name: "<#7bd88f>%label%"
+    lore: ["<gray>%desc%", "", "<#7bd88f>● %state%", "<dark_gray>%hint%"]
+  disabled:
+    name: "<#ff6b6b>%label%"
+    lore: ["<gray>%desc%", "", "<#ff6b6b>● %state%", "<dark_gray>%hint%"]
+
+items:
+  info:
+    slot: 4
+    material: PLAYER_HEAD
+    type: INFO
+    label: "gui.item.editing.label"
+    desc: "gui.item.editing.desc"
+    name: "<#ff5a5a>%label%"
+    lore: ["<gray>%desc%"]
+  chat:               { slot: 10, material: PAPER, type: TOGGLE, setting: chat }
+  plugin-messages:    { slot: 11, material: COMMAND_BLOCK, type: TOGGLE, setting: plugin-messages }
+  mentions:           { slot: 12, material: NAME_TAG, type: TOGGLE, setting: mentions }
+  mention-sounds:     { slot: 13, material: BELL, type: TOGGLE, setting: mention-sounds }
+  msg:                { slot: 14, material: WRITABLE_BOOK, type: TOGGLE, setting: msg }
+  msg-sounds:         { slot: 15, material: NOTE_BLOCK, type: TOGGLE, setting: msg-sounds }
+  messages:           { slot: 16, material: BOOK, type: TOGGLE, setting: messages }
+  death:              { slot: 19, material: SKELETON_SKULL, type: TOGGLE, setting: death }
+  death-sounds:       { slot: 20, material: BONE, type: TOGGLE, setting: death-sounds }
+  join-quit:          { slot: 21, material: OAK_DOOR, type: TOGGLE, setting: join-quit }
+  join-quit-sounds:   { slot: 22, material: OAK_SIGN, type: TOGGLE, setting: join-quit-sounds }
+  achievements:       { slot: 23, material: NETHER_STAR, type: TOGGLE, setting: achievements }
+  achievement-sounds: { slot: 24, material: AMETHYST_SHARD, type: TOGGLE, setting: achievement-sounds }
+  sounds:             { slot: 25, material: JUKEBOX, type: TOGGLE, setting: sounds }
+  language:
+    slot: 30
+    material: COMPASS
+    type: LANGUAGE
+    label: "gui.item.language.label"
+    desc: "gui.item.language.desc"
+    name: "<white>%label%"
+    lore: ["<gray>%desc%", "", "<#ff5a5a>● %language%", "<dark_gray>%hint%"]
+  reset:
+    slot: 32
+    material: BARRIER
+    type: RESET
+    label: "gui.item.reset.label"
+    desc: "gui.item.reset.desc"
+    name: "<#ff6b6b>%label%"
+    lore: ["<gray>%desc%", "", "<dark_gray>%hint%"]

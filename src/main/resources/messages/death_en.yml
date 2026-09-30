@@ -1,0 +1,111 @@
+file-version: 2
+death:
+  player-kill:
+    - "<prefix> %killer% <death>ended %victim%'s journey"
+    - "<prefix> %killer% <death>claimed victory over %victim%"
+    - "<prefix> %victim% <death>fell to %killer%"
+  zombie:
+    - "<prefix> %victim% <death>was overrun by the undead"
+    - "<prefix> %victim% <death>joined the horde"
+    - "<prefix> %victim% <death>was consumed by a zombie"
+  skeleton:
+    - "<prefix> %victim% <death>was pierced by bone and bow"
+    - "<prefix> %victim% <death>fell to a skeleton's aim"
+    - "<prefix> %victim% <death>met the rattling dead"
+  creeper:
+    - "<prefix> %victim% <death>was caught in a blast"
+    - "<prefix> %victim% <death>heard the hiss too late"
+    - "<prefix> %victim% <death>was undone by a creeper"
+  spider:
+    - "<prefix> %victim% <death>was lost to the web"
+    - "<prefix> %victim% <death>was bitten by a spider"
+    - "<prefix> %victim% <death>fell to eight legs"
+  enderman:
+    - "<prefix> %victim% <death>met the gaze of an enderman"
+    - "<prefix> %victim% <death>angered an enderman"
+    - "<prefix> %victim% <death>was taken by the void walker"
+  witch:
+    - "<prefix> %victim% <death>fell to witchcraft"
+    - "<prefix> %victim% <death>was cursed by a witch"
+    - "<prefix> %victim% <death>drank the wrong potion"
+  drowned:
+    - "<prefix> %victim% <death>was dragged beneath the waves"
+    - "<prefix> %victim% <death>was claimed by the drowned"
+    - "<prefix> %victim% <death>joined the sunken"
+  fall:
+    - "<prefix> %victim% <death>missed the ground"
+    - "<prefix> %victim% <death>fell from grace"
+    - "<prefix> %victim% <death>met the ground too fast"
+  fire:
+    - "<prefix> %victim% <death>was consumed by fire"
+    - "<prefix> %victim% <death>burned to ash"
+    - "<prefix> %victim% <death>was lost in flames"
+  lava:
+    - "<prefix> %victim% <death>met their end in lava"
+    - "<prefix> %victim% <death>melted into the lava"
+    - "<prefix> %victim% <death>swam in molten stone"
+  drowning:
+    - "<prefix> %victim% <death>was lost beneath the waves"
+    - "<prefix> %victim% <death>ran out of air"
+    - "<prefix> %victim% <death>sank into silence"
+  suffocation:
+    - "<prefix> %victim% <death>was buried in stone"
+    - "<prefix> %victim% <death>ran out of room"
+    - "<prefix> %victim% <death>could not breathe"
+  void:
+    - "<prefix> %victim% <death>was lost to the void"
+    - "<prefix> %victim% <death>fell into nothing"
+    - "<prefix> %victim% <death>slipped into the abyss"
+  explosion:
+    - "<prefix> %victim% <death>was torn apart by a blast"
+    - "<prefix> %victim% <death>vanished in an explosion"
+    - "<prefix> %victim% <death>went out with a bang"
+  projectile:
+    - "<prefix> %victim% <death>was struck from afar"
+    - "<prefix> %victim% <death>was hit by a stray shot"
+    - "<prefix> %victim% <death>never saw it coming"
+  lightning:
+    - "<prefix> %victim% <death>was struck by lightning"
+    - "<prefix> %victim% <death>caught the storm's anger"
+    - "<prefix> %victim% <death>was smitten from above"
+  poison:
+    - "<prefix> %victim% <death>was poisoned"
+    - "<prefix> %victim% <death>succumbed to venom"
+    - "<prefix> %victim% <death>faded from poison"
+  wither:
+    - "<prefix> %victim% <death>withered away"
+    - "<prefix> %victim% <death>was claimed by decay"
+    - "<prefix> %victim% <death>faded to ash and bone"
+  starvation:
+    - "<prefix> %victim% <death>starved"
+    - "<prefix> %victim% <death>ran out of food"
+    - "<prefix> %victim% <death>wasted away"
+  cactus:
+    - "<prefix> %victim% <death>was pricked to the end"
+    - "<prefix> %victim% <death>hugged a cactus"
+    - "<prefix> %victim% <death>fell to the desert thorns"
+  sweet-berry-bush:
+    - "<prefix> %victim% <death>was lost among the thorns"
+    - "<prefix> %victim% <death>was pricked by berries"
+    - "<prefix> %victim% <death>fell to a berry bush"
+  falling-block:
+    - "<prefix> %victim% <death>was crushed from above"
+    - "<prefix> %victim% <death>was flattened by a block"
+    - "<prefix> %victim% <death>met a falling block"
+  entity-attack:
+    - "<prefix> %victim% <death>fell to %killer%"
+    - "<prefix> %killer% <death>ended %victim%'s journey"
+    - "<prefix> %victim% <death>was slain by %killer%"
+  magic:
+    - "<prefix> %victim% <death>was undone by magic"
+    - "<prefix> %victim% <death>fell to a spell"
+    - "<prefix> %victim% <death>was claimed by sorcery"
+  freeze:
+    - "<prefix> %victim% <death>froze solid"
+    - "<prefix> %victim% <death>was lost to the cold"
+    - "<prefix> %victim% <death>turned to ice"
+  other:
+    - "<prefix> %victim% <death>has met their end"
+    - "<prefix> %victim% <death>has departed"
+    - "<prefix> %victim% <death>has fallen"
+  location: "<prefix> <muted>You died at</muted> <info>%location%</info> <muted>in %world%"

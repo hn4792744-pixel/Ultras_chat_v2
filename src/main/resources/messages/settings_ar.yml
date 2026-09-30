@@ -1,0 +1,52 @@
+file-version: 2
+gui:
+  state:
+    enabled: "مفعّل"
+    disabled: "معطّل"
+  hint:
+    toggle: "انقر للتبديل"
+    open: "انقر للفتح"
+    language: "انقر للتبديل"
+    reset: "انقر للمتابعة"
+    back: "انقر للرجوع"
+    close: "انقر للإغلاق"
+    confirm: "انقر للتأكيد"
+    cancel: "انقر للإلغاء"
+    info: ""
+  title:
+    main: "الإعدادات"
+    chat: "الإعدادات › الشات"
+    notifications: "الإعدادات › الإشعارات"
+    sounds: "الإعدادات › الأصوات"
+    messages: "الإعدادات › الرسائل"
+    admin: "الإعدادات › %target%"
+    confirm: "إعادة الإعدادات"
+    confirm-admin: "إعادة › %target%"
+  setting:
+    chat: { label: "رسائل الشات", desc: "رؤية رسائل اللاعبين" }
+    plugin-messages: { label: "رسائل الإضافة", desc: "تأكيدات أوامر ULTRAS" }
+    messages: { label: "كل الرسائل", desc: "جميع رسائل ULTRAS" }
+    sounds: { label: "كل الأصوات", desc: "جميع أصوات ULTRAS" }
+    death: { label: "رسائل الموت", desc: "استقبال رسائل الموت" }
+    death-sounds: { label: "أصوات الموت", desc: "سماع أصوات الموت" }
+    join-quit: { label: "رسائل الدخول والخروج", desc: "استقبال رسائل الدخول والخروج" }
+    join-quit-sounds: { label: "أصوات الدخول والخروج", desc: "سماع أصوات الدخول والخروج" }
+    achievements: { label: "رسائل الإنجازات", desc: "استقبال رسائل الإنجازات" }
+    achievement-sounds: { label: "أصوات الإنجازات", desc: "سماع أصوات الإنجازات" }
+    msg: { label: "الرسائل الخاصة", desc: "السماح للآخرين بمراسلتك" }
+    msg-sounds: { label: "أصوات الرسائل الخاصة", desc: "سماع أصوات الرسائل الخاصة" }
+    mentions: { label: "المنشن", desc: "تنبيهك عند ذكرك" }
+    mention-sounds: { label: "أصوات المنشن", desc: "سماع أصوات المنشن" }
+  item:
+    chat: { label: "الشات", desc: "الشات ورسائل الإضافة" }
+    notifications: { label: "الإشعارات", desc: "المنشن والرسائل الخاصة" }
+    sounds: { label: "الأصوات", desc: "تحكم بما تسمعه" }
+    messages: { label: "الرسائل", desc: "الموت والدخول والخروج والإنجازات" }
+    language: { label: "اللغة", desc: "لغتك الشخصية" }
+    reset: { label: "إعادة الإعدادات", desc: "استعادة الافتراضي" }
+    back: { label: "رجوع", desc: "" }
+    close: { label: "إغلاق", desc: "" }
+    confirm: { label: "نعم، أعد الضبط", desc: "استعادة كل الإعدادات" }
+    cancel: { label: "لا، إلغاء", desc: "إبقاء الإعدادات الحالية" }
+    confirm-info: { label: "هل أنت متأكد؟", desc: "ستعود كل الإعدادات للافتراضي" }
+    editing: { label: "تعديل الإعدادات", desc: "اللاعب: %target%" }

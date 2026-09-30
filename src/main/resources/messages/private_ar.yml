@@ -1,0 +1,13 @@
+file-version: 2
+pm:
+  to: "<prefix> <pm>رسالة</pm> <sep>→</sep> %receiver% <sep>›</sep> %message%"
+  from: "<prefix> <pm>رسالة</pm> <sep>←</sep> %sender% <sep>›</sep> %message%"
+  actionbar: "%sender% <sep>•</sep> <pm>رسالة"
+  not-found: "<prefix> <error>! اللاعب غير موجود"
+  disabled: "<prefix> <error>× %receiver% لا يستقبل الرسائل"
+  self: "<prefix> <error>! لا يمكنك مراسلة نفسك"
+  usage: "<prefix> <info>→ <muted>/msg ‹اللاعب› ‹الرسالة›"
+  reply-usage: "<prefix> <info>→ <muted>/reply ‹الرسالة›"
+  no-reply: "<prefix> <error>! لا أحد للرد عليه"
+mention:
+  actionbar: "%sender% <sep>•</sep> <mention>منشن"

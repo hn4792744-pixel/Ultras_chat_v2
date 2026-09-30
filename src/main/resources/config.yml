@@ -1,0 +1,216 @@
+# ULTRAS_Chat_v1 - main configuration (by UC_Hussein)
+# Language-neutral settings live here. Texts live in messages/*.yml, menus in gui/*.yml.
+
+file-version: 2   # do not edit: outdated files are backed up (*.old-<time>) and replaced on update
+
+# Default language for players who never chose one: en | ar
+language: en
+
+style:
+  small-caps: true          # render language files flagged with meta.small-caps in small caps
+
+# Prefix is always regular text (never small caps): "UC |" with a red gradient.
+prefix:
+  enabled: true
+  text: "UC"
+  gradient:
+    enabled: true
+    start: "#ff5a4d"
+    end: "#8b0000"
+  separator: "|"
+
+# Colors (hex or named). Keys that are valid tag names can be used in messages as <key>.
+colors:
+  success: "#7bd88f"
+  error: "#ff6b6b"
+  info: "#9fd8e6"
+  warning: "#e8b04b"
+  death: "#9a8c98"
+  pm: "#c8a2ff"
+  mention: "#ffd166"
+  muted: "#8a8a8a"
+  sep: "#5c5c5c"
+  join: "#7bd88f"
+  quit: "#ff6b6b"
+  achievement: "#f4c95d"
+  star: "#f4c95d"           # tag used by achievement messages
+  chatmsg: "#e0e0e0"
+  enabled: "#7bd88f"
+  disabled: "#ff6b6b"
+  accent: "#ff5a5a"
+  # name colors (used from code)
+  killer: "#ff5f5f"
+  victim: "#e6e6e6"
+  player: "#ffffff"
+  sender: "#c8a2ff"
+  receiver: "#c8a2ff"
+
+# Master switches for each replaced system.
+messages:
+  death: true
+  join: true
+  quit: true
+  achievements: true
+  chat: true
+  private-messages: true
+  mentions: true
+
+# When a master switch above is false: should the vanilla message still appear?
+fallback:
+  show-vanilla-message-when-disabled: false
+
+sounds:
+  enabled: true
+  events:
+    death-victim:     { enabled: true, sound: "block.beacon.deactivate", volume: 0.6, pitch: 0.8 }
+    death-broadcast:  { enabled: true, sound: "block.note_block.bass", volume: 0.35, pitch: 0.6 }
+    join:             { enabled: true, sound: "block.amethyst_block.chime", volume: 0.5, pitch: 1.2 }
+    quit:             { enabled: true, sound: "block.amethyst_block.chime", volume: 0.4, pitch: 0.7 }
+    achievement:      { enabled: true, sound: "block.amethyst_block.resonate", volume: 0.7, pitch: 1.0 }
+    private-message:  { enabled: true, sound: "entity.experience_orb.pickup", volume: 0.4, pitch: 1.3 }
+    mention:          { enabled: true, sound: "block.note_block.bell", volume: 0.6, pitch: 1.5 }
+    toggle-on:        { enabled: true, sound: "ui.button.click", volume: 0.5, pitch: 1.4 }
+    toggle-off:       { enabled: true, sound: "ui.button.click", volume: 0.5, pitch: 0.8 }
+    error:            { enabled: true, sound: "block.note_block.bass", volume: 0.5, pitch: 0.5 }
+    success:          { enabled: true, sound: "block.note_block.chime", volume: 0.5, pitch: 1.5 }
+    gui-click:        { enabled: true, sound: "ui.button.click", volume: 0.4, pitch: 1.2 }
+    gui-open:         { enabled: true, sound: "item.book.page_turn", volume: 0.5, pitch: 1.2 }
+    language-changed: { enabled: true, sound: "entity.experience_orb.pickup", volume: 0.4, pitch: 0.9 }
+    reset:            { enabled: true, sound: "block.beacon.deactivate", volume: 0.5, pitch: 1.4 }
+
+actionbar:
+  duration-ticks: 60        # how long HUD notifications stay visible
+
+death:
+  respect-suppressed-message: true   # if another plugin already removed the message, do nothing
+  disabled-type-shows-vanilla: false # enabled:false on a type: false = hide ULTRAS and vanilla, true = only hide ULTRAS
+  show-location: true                # tell the victim (only) where they died
+  sound:
+    enabled: true
+    victim: true
+    broadcast: true
+    scope: server                    # server | world
+  # enabled:false hides BOTH the ULTRAS and the vanilla message for that death type.
+  types:
+    player-kill:      { enabled: true, random: true }
+    zombie:           { enabled: true, random: true }
+    skeleton:         { enabled: true, random: true }
+    creeper:          { enabled: true, random: true }
+    spider:           { enabled: true, random: true }
+    enderman:         { enabled: true, random: true }
+    witch:            { enabled: true, random: true }
+    drowned:          { enabled: true, random: true }
+    fall:             { enabled: true, random: true }
+    fire:             { enabled: true, random: true }
+    lava:             { enabled: true, random: true }
+    drowning:         { enabled: true, random: true }
+    suffocation:      { enabled: true, random: true }
+    void:             { enabled: true, random: true }
+    explosion:        { enabled: true, random: true }
+    projectile:       { enabled: true, random: true }
+    lightning:        { enabled: true, random: true }
+    poison:           { enabled: true, random: true }
+    wither:           { enabled: true, random: true }
+    starvation:       { enabled: true, random: true }
+    cactus:           { enabled: true, random: true }
+    sweet-berry-bush: { enabled: true, random: true }
+    falling-block:    { enabled: true, random: true }
+    entity-attack:    { enabled: true, random: true }
+    magic:            { enabled: true, random: true }
+    freeze:           { enabled: true, random: true }
+    other:            { enabled: true, random: true }
+
+join:
+  respect-suppressed-message: true   # vanish plugins that remove the message keep working
+  first-join:
+    enabled: true                    # special message the first time a player ever joins
+  sound:
+    enabled: true
+    play-to-self: false
+
+quit:
+  respect-suppressed-message: true
+  sound:
+    enabled: true
+
+achievement:
+  sound:
+    enabled: true
+    scope: self                      # self | all
+  types:
+    task:      { enabled: true }
+    goal:      { enabled: true }
+    challenge: { enabled: true }
+
+chat:
+  player-toggle: true                # /chat toggle chat works even if messages.chat is false
+  show-own-messages: true            # a player with chat off still sees their own messages
+  hide-private-messages: true        # chat off also blocks incoming /msg text (sender is told "not receiving messages")
+  # AUTO   = format chat unless a known chat plugin is installed (viewer filtering still works)
+  # ALWAYS = always apply the ULTRAS format
+  # NEVER  = never touch the format
+  format-mode: AUTO
+  known-chat-plugins: [EssentialsChat, ChatControl, CarbonChat, VentureChat, LPC, DeluxeChat, ChatChat, HuskChat, UltimateChat]
+
+mentions:
+  enabled: true
+  from-everyone: true       # false: only players with ultraschat.mention.staff can mention
+  sound: true
+  actionbar: true
+  max-per-message: 3
+
+vanish:
+  respect: true             # vanished players cannot be mentioned / messaged by players who cannot see them
+  hide-events: true         # no join/quit/death/achievement message (ULTRAS or vanilla) for vanished players
+
+ignore:
+  enabled: true             # /chat ignore <player>: you no longer see that player's chat or private messages
+
+private:
+  actionbar: true           # HUD notification for incoming private messages
+
+anti-spam:
+  enabled: true
+  chat-delay-ms: 500
+  mention-delay-ms: 500
+  pm-delay-ms: 300
+
+chat-filter:
+  enabled: false
+  words: []
+
+gui:
+  enabled: true
+
+# Defaults for players who never changed a setting (also used by /chat reset).
+player-defaults:
+  chat: true
+  plugin-messages: true
+  messages: true
+  sounds: true
+  death: true
+  death-sounds: true
+  join-quit: true
+  join-quit-sounds: true
+  achievements: true
+  achievement-sounds: true
+  msg: true
+  msg-sounds: true
+  mentions: true
+  mention-sounds: true
+
+storage:
+  save-delay-ticks: 40      # changes are flushed shortly after they happen (and on shutdown)
+
+logging:
+  enabled: true
+  keep-days: 14
+  reload: true
+  settings: true
+  language: true
+  death: true
+  join-quit: true
+  pm: true
+  mention: true
+  error: true
+  config: true

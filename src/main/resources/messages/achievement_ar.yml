@@ -1,0 +1,5 @@
+file-version: 2
+achievement:
+  task: "<prefix> <star>•</star> %player% <muted>فتح الإنجاز</muted> %achievement%"
+  goal: "<prefix> <star>•</star> %player% <muted>حقق الهدف</muted> %achievement%"
+  challenge: "<prefix> <star>•</star> %player% <muted>أتم التحدي</muted> %achievement%"

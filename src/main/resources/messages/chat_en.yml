@@ -1,0 +1,4 @@
+file-version: 2
+chat:
+  format: "<prefix> %player% <sep>›</sep> %message%"
+  blocked: "<prefix> <warning>! Your message was blocked"

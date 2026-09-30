@@ -1,0 +1,6 @@
+file-version: 2
+join:
+  format: "<prefix> <join>+</join> %player%"
+  first-format: "<prefix> <join>+</join> %player% <muted>joined for the first time"
+quit:
+  format: "<prefix> <quit>-</quit> %player%"

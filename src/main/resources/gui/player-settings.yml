@@ -1,0 +1,53 @@
+file-version: 2
+# Category pages opened from settings.yml (27 slots each).
+toggle-style:
+  enabled:
+    name: "<#7bd88f>%label%"
+    lore: ["<gray>%desc%", "", "<#7bd88f>● %state%", "<dark_gray>%hint%"]
+  disabled:
+    name: "<#ff6b6b>%label%"
+    lore: ["<gray>%desc%", "", "<#ff6b6b>● %state%", "<dark_gray>%hint%"]
+
+pages:
+  chat:
+    title: "<#c9c9c9>%title%"
+    title-key: "gui.title.chat"
+    size: 27
+    filler: { enabled: true, material: GRAY_STAINED_GLASS_PANE }
+    items:
+      chat:            { slot: 11, material: PAPER, type: TOGGLE, setting: chat }
+      plugin-messages: { slot: 15, material: COMMAND_BLOCK, type: TOGGLE, setting: plugin-messages }
+      back:            { slot: 22, material: ARROW, type: BACK, label: "gui.item.back.label", name: "<white>%label%", lore: ["<dark_gray>%hint%"] }
+  notifications:
+    title: "<#c9c9c9>%title%"
+    title-key: "gui.title.notifications"
+    size: 27
+    filler: { enabled: true, material: GRAY_STAINED_GLASS_PANE }
+    items:
+      mentions:       { slot: 10, material: NAME_TAG, type: TOGGLE, setting: mentions }
+      mention-sounds: { slot: 12, material: BELL, type: TOGGLE, setting: mention-sounds }
+      msg:            { slot: 14, material: WRITABLE_BOOK, type: TOGGLE, setting: msg }
+      msg-sounds:     { slot: 16, material: NOTE_BLOCK, type: TOGGLE, setting: msg-sounds }
+      back:           { slot: 22, material: ARROW, type: BACK, label: "gui.item.back.label", name: "<white>%label%", lore: ["<dark_gray>%hint%"] }
+  sounds:
+    title: "<#c9c9c9>%title%"
+    title-key: "gui.title.sounds"
+    size: 27
+    filler: { enabled: true, material: GRAY_STAINED_GLASS_PANE }
+    items:
+      sounds:             { slot: 10, material: JUKEBOX, type: TOGGLE, setting: sounds }
+      death-sounds:       { slot: 12, material: BONE, type: TOGGLE, setting: death-sounds }
+      join-quit-sounds:   { slot: 14, material: OAK_SIGN, type: TOGGLE, setting: join-quit-sounds }
+      achievement-sounds: { slot: 16, material: AMETHYST_SHARD, type: TOGGLE, setting: achievement-sounds }
+      back:               { slot: 22, material: ARROW, type: BACK, label: "gui.item.back.label", name: "<white>%label%", lore: ["<dark_gray>%hint%"] }
+  messages:
+    title: "<#c9c9c9>%title%"
+    title-key: "gui.title.messages"
+    size: 27
+    filler: { enabled: true, material: GRAY_STAINED_GLASS_PANE }
+    items:
+      messages:     { slot: 10, material: BOOK, type: TOGGLE, setting: messages }
+      death:        { slot: 12, material: SKELETON_SKULL, type: TOGGLE, setting: death }
+      join-quit:    { slot: 14, material: OAK_DOOR, type: TOGGLE, setting: join-quit }
+      achievements: { slot: 16, material: NETHER_STAR, type: TOGGLE, setting: achievements }
+      back:         { slot: 22, material: ARROW, type: BACK, label: "gui.item.back.label", name: "<white>%label%", lore: ["<dark_gray>%hint%"] }

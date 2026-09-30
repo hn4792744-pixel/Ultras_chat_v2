@@ -1,0 +1,13 @@
+file-version: 2
+pm:
+  to: "<prefix> <pm>msg</pm> <sep>→</sep> %receiver% <sep>›</sep> %message%"
+  from: "<prefix> <pm>msg</pm> <sep>←</sep> %sender% <sep>›</sep> %message%"
+  actionbar: "%sender% <sep>•</sep> <pm>msg"
+  not-found: "<prefix> <error>! Player not found"
+  disabled: "<prefix> <error>× %receiver% is not receiving messages"
+  self: "<prefix> <error>! You cannot message yourself"
+  usage: "<prefix> <info>→ <muted>/msg ‹player› ‹message›"
+  reply-usage: "<prefix> <info>→ <muted>/reply ‹message›"
+  no-reply: "<prefix> <error>! No one to reply to"
+mention:
+  actionbar: "%sender% <sep>•</sep> <mention>mention"

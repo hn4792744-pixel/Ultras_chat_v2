@@ -1,0 +1,32 @@
+file-version: 2
+title: "<#c9c9c9>%title%"
+title-key: "gui.title.confirm"
+size: 27
+filler:
+  enabled: true
+  material: GRAY_STAINED_GLASS_PANE
+items:
+  info:
+    slot: 13
+    material: PAPER
+    type: INFO
+    label: "gui.item.confirm-info.label"
+    desc: "gui.item.confirm-info.desc"
+    name: "<#e8b04b>%label%"
+    lore: ["<gray>%desc%"]
+  confirm:
+    slot: 11
+    material: LIME_WOOL
+    type: CONFIRM
+    label: "gui.item.confirm.label"
+    desc: "gui.item.confirm.desc"
+    name: "<#7bd88f>%label%"
+    lore: ["<gray>%desc%", "", "<dark_gray>%hint%"]
+  cancel:
+    slot: 15
+    material: RED_WOOL
+    type: CANCEL
+    label: "gui.item.cancel.label"
+    desc: "gui.item.cancel.desc"
+    name: "<#ff6b6b>%label%"
+    lore: ["<gray>%desc%", "", "<dark_gray>%hint%"]
